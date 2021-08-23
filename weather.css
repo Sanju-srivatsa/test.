@@ -1,0 +1,36 @@
+#sac{display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:5%;
+    }
+
+ /* body {
+     background-color:#acb4cf ;
+ }     */
+ body{
+    background: url('image.png') ;
+    background-size: cover;
+     -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+         /* background-color:navy; */
+    }
+
+ #clouds{
+     text-align: end;
+display:inline;
+font-size: 250%;
+ }
+
+ #desc{
+text-align: center;
+ }
+ .navbar-brand{
+     justify-content: center;
+ }
+ 
+ .card{
+border: 5px solid rgb(203, 214, 224,0.7);
+border-radius:5%;
+ }

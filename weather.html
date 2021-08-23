@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo18s0YpTBbDtv3XUhKjbq7OiWKf-lmQgd6fQn50v-Xe_cmGfr9ygcfoGSbQ3vqFmJqMA&usqp=CAU">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather  </title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div> 
+   
+   <nav class="navbar" style=" background:rgb(0,0,0,0.9)">
+    <a class="navbar-brand text-white"><h2>Forecast  Predictor</h2></a>
+    <!-- <div class="form-inline">
+      <input class="form-control mr-sm-2" placeholder="Search" id="name" name="name" aria-label="Search" value=" ">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="weatherApp()">Search</button>
+    </div> -->
+  </nav>
+  <nav class="navbar navbar-light justify-content-center" style=" background-color:rgba(199, 96, 104,0.8)" >
+    <div class="form-inline">
+      <input class="form-control mr-sm-2" id="name" name="name" aria-label="Search" value=" ">
+      <button class="btn btn-light my-2 my-sm-0" type="submit" onclick="weatherApp()">Search</button>
+    </div>
+  </nav>
+  <div id="sac">
+  <div class="card text-center text-white"style="width: 22rem; background:lightskyblue">
+    <div class="card-body">
+      <h5 id="country"> Ghatkesar IN</h5>
+      <span id="imagee">`<img src="http://openweathermap.org/img/w/04d.png" style="max-width:100%"/> </span>
+     &nbsp; &nbsp; &nbsp; <span class="card-text text-dark" id="clouds">25</span> 
+    <span id="units" onclick="myFun()" type="button"> °C | °F</span>
+    <span id="score"> </span>
+    </div>
+    <span id="desc">overcast clouds</span>
+    <ul class="list-group list-group-flush">
+     <li class="list-group-item" id="realc" style="background:lightcoral">Precipitation:90%</li>
+   <li class="list-group-item" id="humidity" style="background:lightpink">Humidity:65%</li>
+   <li class="list-group-item" id="winds"  style="background:limegreen">wind speed:2.04mph</li>
+    </ul>
+    <!-- <div class="card-body">
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div> -->
+  </div>
+</div>
+<div id="weather"></div>
+    </div>
+    
+    <div  id="temperature"></div>
+    </div>
+    <div  id="image"></div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
